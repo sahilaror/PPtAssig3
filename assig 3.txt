@@ -1,0 +1,138 @@
+ANS 1 public class Account {
+  private String name;
+  private String accountNumber;
+  private double balance;
+
+  public Account(String name, String accountNumber, double balance) {
+    this.name = name;
+    this.accountNumber = accountNumber;
+    this.balance = balance;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getAccountNumber() {
+    return accountNumber;
+  }
+
+  public void setAccountNumber(String accountNumber) {
+    this.accountNumber = accountNumber;
+  }
+
+  public double getBalance() {
+    return balance;
+  }
+
+  public void setBalance(double balance) {
+    this.balance = balance;
+  }
+
+  public void deposit(double amount) {
+    balance += amount;
+  }
+
+  public void withdraw(double amount) {
+    balance -= amount;
+  }
+
+  public String getAccountInfo() {
+    return "Name: " + name + ", Account Number: " + accountNumber + ", Balance: " + balance;
+  }
+
+ANS 2
+		class Base
+{
+    void showme()
+    {
+        System.out.println(" Base class method");
+    }
+}
+ class Child extends Base
+{
+    void showme()
+    {
+      System.out.println("Child class method");
+    }
+    public static void main(String... a)
+    {
+       Child obj = new Child();
+       obj.showme();
+    }
+}
+
+
+ANS 3	
+
+class Animal {
+   public void move() {
+      System.out.println("Animals can move");
+   }
+}
+class Dog extends Animal {
+   public void move() {
+      System.out.println("Dogs can walk and run");
+   }
+}
+public class TestDog {
+   public static void main(String args[]) {
+      Animal a = new Animal(); // Animal reference and object
+      Animal b = new Dog(); // Animal reference but Dog object
+      a.move(); // runs the method in Animal class
+      b.move(); // runs the method in Dog class
+   }
+}
+
+ANS 4
+	class SimpleCalculator
+{
+    int add(int a, int b)  
+    {
+         return a+b;
+    }
+    int  add(int a, int b, int c)  
+    {
+         return a+b+c;
+    }
+}
+public class DemoCal
+{
+   public static void main(String args[])
+   {   
+	   SimpleCalculator obj = new SimpleCalculator();
+       System.out.println(obj.add(10, 20)); 
+       System.out.println(obj.add(10, 20, 30));
+   }
+}
+
+ANS 5
+			Coupling refers to the dependency of one object type on another, if two objects are completely independent of each other and the changes done in one doesn’t affect the other both are said to be loosely coupled.
+
+ANS 6
+	Protect Your Data
+	easy to test coed 
+	easy to reuse 
+	flexible
+
+ANS 7
+	 Java is not a fully object-oriented language as it supports primitive data types like int, byte, long, short, etc., which are not objects. Hence these data types like int, float, double, etc., are not object-oriented. That's why Java is not 100% object-oriented.
+
+ANS 8
+	Adding new features to a system is easier because the interface remains the same, and the implementation details can be hidden behind it. Maintainability: Abstraction helps to reduce code duplication by providing a way to define common behavior in a single location.
+
+ANS 9
+	Abstraction is the process of hiding the internal details of an application from the outer world. Abstraction is used to describe things in simple terms. It’s used to create a boundary between the application and the client programs.
+
+EX:-	Your car is a great example of abstraction. You can start a car by turning the key or pressing the start button. You don't need to know how the engine is getting started, what all components your car has. The car internal implementation and complex logic is completely hidden		
+
+ANS 10
+	The final keyword in java is used to restrict the user. The java final keyword can be used in many context. Final can be:
+
+variable
+method
+class
